@@ -1,0 +1,7 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+.card {
+  @apply relative overflow-hidden bg-white rounded shadow-md;
+}
+@tailwind utilities;

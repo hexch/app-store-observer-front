@@ -14,5 +14,6 @@
             "wrapAttributes": false,
             "sortAttributes": false
         }
-    }
+    },
+    "vetur.experimental.templateInterpolationService": true
 }
