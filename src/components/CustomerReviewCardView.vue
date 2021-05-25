@@ -7,11 +7,11 @@
       <div class="mb-5 ml-2 mr-2 text-2xl font-bold text-left">{{ score }}</div>
       <a-rate :value="score" disabled allow-half />
     </div>
-    <CustomerReviewProgressBarView :label="5" :value="star1" :total="total" />
-    <CustomerReviewProgressBarView :label="4" :value="star2" :total="total" />
-    <CustomerReviewProgressBarView :label="3" :value="star3" :total="total" />
-    <CustomerReviewProgressBarView :label="2" :value="star4" :total="total" />
-    <CustomerReviewProgressBarView :label="1" :value="star5" :total="total" />
+    <CustomerReviewProgressBarView label="5" :value="star1" :total="total" />
+    <CustomerReviewProgressBarView label="4" :value="star2" :total="total" />
+    <CustomerReviewProgressBarView label="3" :value="star3" :total="total" />
+    <CustomerReviewProgressBarView label="2" :value="star4" :total="total" />
+    <CustomerReviewProgressBarView label="1" :value="star5" :total="total" />
   </div>
 </template>
 

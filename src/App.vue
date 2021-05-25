@@ -3,11 +3,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from "vue";
+import {
+  defineComponent,
+  reactive,
+  onBeforeMount,
+  onMounted,
+  onActivated,
+  ref,
+} from "vue";
 import MultiCircle from "./components/MultiCircles.vue";
 import MultiCirclesItemData from "./types/multi-circles-data";
 
 import CustomerReviewCardView from "./components/CustomerReviewCardView.vue";
+import { init, fetch } from "./firebase/firebase-firestore";
 
 const labelDataValues: MultiCirclesItemData[] = [
   { name: "a", value: 40 },
@@ -26,6 +34,7 @@ export default defineComponent({
     const values = reactive(labelDataValues);
     const score: number = 4.5;
     const reviews: number[] = [10, 5, 1, 1, 3];
+
     return {
       values,
       score,
